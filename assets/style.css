@@ -1,0 +1,170 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  min-height: 26px;
+  background-color: grey;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 16px;
+  margin: 8px 0;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+button.search-btn {
+  color: white;
+  background-color: #007bff;
+  margin-top: 16px;
+}
+
+button.clear-btn {
+  color: white;
+  background-color: #dc3545;
+  margin-top: 8px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 80px;
+  padding: 8px;
+  color: white;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+}
+
+hr {
+  width: 100%;
+  margin: 8px 0;
+}
+
+input.search-query {
+  min-height: 32px;
+  border-radius: 4px;
+  border: 2px solid darkgray;
+  padding: 4px 8px;
+  margin: 8px 0 4px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+p {
+  font-weight: bold;
+}
+
+section.search {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  min-width: 25%;
+}
+
+section.search > h2 {
+  margin-bottom: 0;
+}
+
+section.search > code {
+  background-color: aliceblue;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+}
+
+section.stats {
+  flex: 1;
+}
+
+.current {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.current > .summary {
+  display: flex;
+}
+
+.summary > img {
+  margin-left: 12px;
+}
+
+.forecast {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+}
+
+.forecast > .cards {
+  display: flex;
+}
+
+.cards > .card {
+  display: flex;
+  flex-direction: column;
+  background-color: lightslategray;
+  color: white;
+  padding: 4px 12px;
+  margin: 8px;
+  flex: 1;
+  border-radius: 4px;
+}
+
+.cards > .card:first-child {
+  margin-left: 0;
+}
+
+.cards > .card:last-child {
+  margin-right: 0;
+}
+
+.card > img {
+  width: fit-content;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+}
+
+.uvi {
+  display: flex;
+  align-items: center;
+}
+
+.uvi > p {
+  padding: 8px 12px;
+  margin: 0 12px;
+  border-radius: 4px;
+}
+
+.uvi > .severe {
+  background-color: #dc3545;
+  color: black;
+}
+
+.uvi > .moderate {
+  background-color: yellow;
+  color: black;
+}
+
+.uvi > .mild {
+  background-color: green;
+  color: white;
+}

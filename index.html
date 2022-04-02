@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+    <meta
+      name="description"
+      content="An app that provides a 5-day forecast for various cities around the United States."
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./assets/reset.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+    <meta name="theme-color" content="#fafafa" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Weather Dashboard</h1>
+    </header>
+    <main>
+      <section class="search">
+        <h2>Search for a city and/or state:</h2>
+        <p>Example searches include:</p>
+        <code>Minneapolis</code>
+        <code>Minneapolis, Minnesota</code>
+        <input class="search-query" type="text" name="search-query" />
+        <button class="search-btn" type="button">Search</button>
+        <button class="clear-btn" type="button">Clear History</button>
+        <hr />
+        <div class="history"></div>
+      </section>
+      <section class="stats">
+        <div class="current">
+          <div class="summary">
+            <h2></h2>
+            <img src="" />
+          </div>
+          <p class="temp"></p>
+          <p class="wind"></p>
+          <p class="humidity"></p>
+          <p class="uvi"></p>
+        </div>
+        <div class="forecast">
+          <h3></h3>
+          <div class="cards"></div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/env.js"></script>
+    <script src="./assets/classes.js"></script>
+    <script src="./assets/main.js"></script>
+  </body>
+</html>
